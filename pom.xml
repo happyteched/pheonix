@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.gurmeet</groupId>
+  <artifactId>base</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>base Maven Multi Project</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+  	<module>gurudwaradirectory</module>
+  	<module>common</module>
+  	<module>certificationpro</module>
+  </modules>
+   <properties>
+          <tapestry-release-version>5.3.3</tapestry-release-version>
+          <servlet-api-release-version>2.5</servlet-api-release-version>
+          <testng-release-version>5.14.9</testng-release-version>
+          <easymock-release-version>3.0</easymock-release-version>
+          <jetty-version>7.6.4.v20120524</jetty-version>
+          <mm-project-version>0.0.1-SNAPSHOT</mm-project-version>
+          <org.springframework.version>3.1.0.RELEASE</org.springframework.version>
+          <org.springframework.data.version>1.1.0.RELEASE</org.springframework.data.version>
+
+          <hsqldb.version>2.2.8</hsqldb.version>
+          <org.hibernate.hibernate-entitymanager.version>4.0.1.Final</org.hibernate.hibernate-entitymanager.version>
+     </properties>
+</project>
