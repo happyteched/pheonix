@@ -12,17 +12,36 @@
   	<module>common</module>
   	<module>certificationpro</module>
   </modules>
-   <properties>
-          <tapestry-release-version>5.3.3</tapestry-release-version>
-          <servlet-api-release-version>2.5</servlet-api-release-version>
-          <testng-release-version>5.14.9</testng-release-version>
-          <easymock-release-version>3.0</easymock-release-version>
-          <jetty-version>7.6.4.v20120524</jetty-version>
-          <mm-project-version>0.0.1-SNAPSHOT</mm-project-version>
-          <org.springframework.version>3.1.0.RELEASE</org.springframework.version>
-          <org.springframework.data.version>1.1.0.RELEASE</org.springframework.data.version>
-
-          <hsqldb.version>2.2.8</hsqldb.version>
-          <org.hibernate.hibernate-entitymanager.version>4.0.1.Final</org.hibernate.hibernate-entitymanager.version>
-     </properties>
+   <repositories>
+		<!-- For testing against latest Spring snapshots -->
+		<repository>
+			<id>spring-snapshot</id>
+			<name>SpringSource Snapshot Repository</name>
+			<url>http://repo.springsource.org/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<!-- For Spring releases -->
+		<repository>
+			<id>spring-repository</id>
+			<name>SpringSource Repository</name>
+			<url>http://repo.springsource.org/release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<!-- For developing against latest Spring milestones -->
+		<repository>
+			<id>spring-milestone</id>
+			<name>SpringSource Milestone Repository</name>
+			<url>http://repo.springsource.org/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 </project>
